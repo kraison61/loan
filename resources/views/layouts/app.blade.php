@@ -67,6 +67,7 @@
 
         summary::-webkit-details-marker { display: none; }
     </style>
+    @fluxAppearance
 </head>
 <body class="font-thai text-brand-ink bg-brand-paper antialiased">
 
@@ -105,6 +106,9 @@
             <div class="flex flex-wrap items-center gap-4">
                 <a href="#options" class="font-kanit font-bold inline-flex items-center gap-2 rounded-full transition-all duration-180 bg-gradient-to-br from-limeaccent to-limeaccent-dark text-brand-900 text-[1.15rem] py-4 px-9 shadow-[0_8px_24px_rgba(143,214,31,0.45)] hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_14px_34px_rgba(143,214,31,0.6)]">ดูสินเชื่อที่อนุมัติไว →</a>
                 <a href="#how" class="font-kanit font-semibold inline-flex items-center gap-2 rounded-full transition-all duration-180 bg-white text-brand-700 border-2 border-brand-100 text-[1rem] py-3.5 px-6 hover:border-brand-400 hover:-translate-y-0.5">สมัครยังไง?</a>
+
+                <flux:button variant="primary">It works</flux:button>
+                
             </div>
             <div class="mt-6 text-[0.9rem] text-brand-700 flex flex-wrap gap-x-6 gap-y-2">
                 <span class="flex items-center gap-1.5 font-medium">
@@ -342,5 +346,6 @@
     }
     upd();
 </script>
+@fluxScripts
 </body>
 </html>
