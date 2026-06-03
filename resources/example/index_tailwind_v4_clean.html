@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="th" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>เงินทันใจ | สินเชื่อด่วน อนุมัติไว สมัครง่าย</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500;600;700;800&family=IBM+Plex+Sans+Thai:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS v4 CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    
+    <!-- ตั้งค่า Theme ผ่าน CSS Variables แบบใหม่ของ Tailwind v4 -->
+    <style type="text/tailwindcss">
+        @theme {
+            --font-kanit: 'Kanit', sans-serif;
+            --font-thai: '"IBM Plex Sans Thai"', sans-serif;
+            
+            --color-brand-50: #eefbf4;
+            --color-brand-100: #d6f5e6;
+            --color-brand-300: #7ee0b5;
+            --color-brand-400: #3dc78f;
+            --color-brand-500: #19a974;
+            --color-brand-600: #13855f;
+            --color-brand-700: #0f6b4d;
+            --color-brand-800: #0a4d38;
+            --color-brand-900: #053527;
+            --color-brand-ink: #06281d;
+            --color-brand-paper: #f4faf6;
+            
+            --color-limeaccent: #b6f24a;
+            --color-limeaccent-dark: #8fd61f;
+            
+            --shadow-soft: 0 10px 40px rgba(6, 40, 29, 0.10);
+            --shadow-pop: 0 18px 50px rgba(15, 107, 77, 0.28);
+        }
+    </style>
+
+    <style>
+        /* Custom CSS สำหรับ Animation และ Webkit pseudo-elements */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-26px); }
+        }
+        .animate-float-1 { animation: float 9s ease-in-out infinite; }
+        .animate-float-2 { animation: float 11s ease-in-out infinite reverse; }
+        
+        @keyframes ping-custom {
+            0% { box-shadow: 0 0 0 0 rgba(25,169,116,0.55); }
+            70% { box-shadow: 0 0 0 12px rgba(25,169,116,0); }
+            100% { box-shadow: 0 0 0 0 rgba(25,169,116,0); }
+        }
+        .animate-ping-custom { animation: ping-custom 1.8s infinite; }
+
+        input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 1.625rem;
+            height: 1.625rem;
+            border-radius: 50%;
+            background: #ffffff;
+            border: 5px solid #19a974;
+            cursor: pointer;
+            box-shadow: 0 10px 40px rgba(6, 40, 29, 0.10);
+        }
+        
+        summary::-webkit-details-marker { display: none; }
+    </style>
+</head>
+<body class="font-thai text-brand-ink bg-brand-paper antialiased">
+
+<!-- NAV -->
+<nav class="sticky top-0 z-50 bg-brand-paper/85 backdrop-blur-xl border-b border-brand-100">
+    <div class="max-w-280 w-[92vw] mx-auto flex items-center justify-between py-3.5">
+        <div class="font-kanit font-bold text-2xl text-brand-700 flex items-center gap-2">
+            <span class="w-8.5 h-8.5 rounded-xl bg-gradient-to-br from-brand-500 to-brand-700 flex items-center justify-center text-white text-lg shadow-soft font-extrabold">฿</span>
+            เงินทันใจ
+        </div>
+        <div class="flex items-center gap-8">
+            <a href="#options" class="hidden md:block text-brand-800 font-medium text-[0.97rem] hover:text-brand-500 transition-colors">สินเชื่อแนะนำ</a>
+            <a href="#how" class="hidden md:block text-brand-800 font-medium text-[0.97rem] hover:text-brand-500 transition-colors">สมัครยังไง</a>
+            <a href="#faq" class="hidden md:block text-brand-800 font-medium text-[0.97rem] hover:text-brand-500 transition-colors">คำถามบ่อย</a>
+            <a href="#options" class="font-kanit font-bold border-none cursor-pointer inline-flex items-center gap-2 text-decoration-none rounded-full transition-all duration-180 bg-gradient-to-br from-limeaccent to-limeaccent-dark text-brand-900 shadow-[0_8px_24px_rgba(143,214,31,0.45)] hover:-translate-y-0.5 hover:scale-[1.02] hover:shadow-[0_14px_34px_rgba(143,214,31,0.6)] py-2 px-6 text-[1rem]">สมัครเลย</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<header class="relative py-18 md:py-20 overflow-hidden">
+    <div class="absolute inset-0 z-[-2] bg-[radial-gradient(900px_500px_at_80%_-10%,#d6f5e6,transparent_60%),radial-gradient(700px_600px_at_10%_110%,#e3f9ec,transparent_55%)]"></div>
+    <span class="absolute w-80 h-80 rounded-full bg-brand-300 blur-xl opacity-50 z-[-1] -top-15 -right-10 animate-float-1"></span>
+    <span class="absolute w-55 h-55 rounded-full bg-limeaccent blur-xl opacity-[0.28] z-[-1] bottom-[-40px] left-[6%] animate-float-2"></span>
+    
+    <div class="max-w-280 w-[92vw] mx-auto grid grid-cols-1 lg:grid-cols-[1.15fr_.85fr] gap-12 items-center">
+        <div>
+            <span class="inline-flex items-center gap-2 bg-white border border-brand-100 text-brand-700 font-semibold text-[0.9rem] py-2 px-4 rounded-full shadow-soft mb-6">
+                <span class="w-[9px] h-[9px] rounded-full bg-brand-500 animate-ping-custom"></span> 
+                เปรียบเทียบสินเชื่อด่วน อัปเดตปี 2026
+            </span>
+            <h1 class="font-kanit text-[2.4rem] md:text-[3.7rem] font-extrabold text-brand-900 leading-[1.18] tracking-tight">
+                เงินด่วน อนุมัติไว<br><span class="text-brand-500 relative z-10">สมัครง่าย<span class="absolute left-0 right-0 bottom-[0.05em] h-[0.32em] bg-limeaccent/55 z-[-1] rounded-sm"></span></span> ใช้แค่บัตรประชาชน
+            </h1>
+            <p class="text-[1.18rem] text-brand-800 my-6 max-w-[34ch]">รวมสินเชื่อที่อนุมัติเร็วที่สุด คัดมาให้แล้ว 3 ตัว เทียบวงเงิน ความเร็ว และดอกเบี้ยได้ในที่เดียว</p>
+            <div class="flex flex-wrap items-center gap-4">
+                <a href="#options" class="font-kanit font-bold inline-flex items-center gap-2 rounded-full transition-all duration-180 bg-gradient-to-br from-limeaccent to-limeaccent-dark text-brand-900 text-[1.15rem] py-4 px-9 shadow-[0_8px_24px_rgba(143,214,31,0.45)] hover:-translate-y-1 hover:scale-[1.02] hover:shadow-[0_14px_34px_rgba(143,214,31,0.6)]">ดูสินเชื่อที่อนุมัติไว →</a>
+                <a href="#how" class="font-kanit font-semibold inline-flex items-center gap-2 rounded-full transition-all duration-180 bg-white text-brand-700 border-2 border-brand-100 text-[1rem] py-3.5 px-6 hover:border-brand-400 hover:-translate-y-0.5">สมัครยังไง?</a>
+            </div>
+            <div class="mt-6 text-[0.9rem] text-brand-700 flex flex-wrap gap-x-6 gap-y-2">
+                <span class="flex items-center gap-1.5 font-medium">
+                    <svg class="w-4.5 h-4.5 text-brand-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> ไม่มีค่าใช้จ่ายในการเปรียบเทียบ
+                </span>
+                <span class="flex items-center gap-1.5 font-medium">
+                    <svg class="w-4.5 h-4.5 text-brand-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7"/></svg> ข้อมูลปลอดภัย เข้ารหัส
+                </span>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-[26px] p-7 shadow-pop border border-brand-100 relative transform transition-all duration-500">
+            <div class="text-[0.85rem] text-brand-600 font-semibold">ลองเลือกวงเงินที่ต้องการ</div>
+            <div class="font-kanit font-extrabold text-[2.6rem] text-brand-900 leading-[1.1] mt-1" id="amt">20,000 <small class="text-[1rem] text-brand-600 font-medium">บาท</small></div>
+            
+            <input class="appearance-none w-full h-2 rounded-full my-4 cursor-pointer" type="range" min="5000" max="50000" step="1000" value="20000" id="rng" oninput="upd()" style="background: linear-gradient(90deg, #19a974 55%, #d6f5e6 55%)">
+            
+            <div class="flex justify-between text-[0.82rem] text-brand-700"><span>5,000</span><span>50,000</span></div>
+            <div class="mt-5 bg-brand-50 rounded-xl p-4 flex justify-between items-center">
+                <span class="text-brand-ink/80">ผ่อนเริ่มต้นประมาณ</span>
+                <b class="font-kanit text-brand-700 text-lg" id="pay">฿1,850 / เดือน*</b>
+            </div>
+            <a href="#options" class="w-full text-center font-kanit font-bold inline-flex items-center justify-center gap-2 rounded-full transition-all duration-180 bg-gradient-to-br from-limeaccent to-limeaccent-dark text-brand-900 text-[1.15rem] py-4 px-9 shadow-[0_8px_24px_rgba(143,214,31,0.45)] hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(143,214,31,0.6)] mt-4">หาสินเชื่อที่ใช่ →</a>
+            <p class="text-[0.75rem] text-brand-600 mt-3 text-center">*ตัวเลขประมาณการเพื่อแสดงผลเท่านั้น อัตราจริงขึ้นกับผู้ให้บริการ</p>
+        </div>
+    </div>
+</header>
+
+<!-- 3 OPTIONS -->
+<section id="options" class="py-18 md:py-20">
+    <div class="max-w-280 w-[92vw] mx-auto">
+        <div class="text-center max-w-155 mx-auto mb-11">
+            <span class="font-kanit font-semibold text-brand-500 tracking-wider uppercase text-[0.85rem]">เมนูด่วน · เลือกที่ใช่กับคุณ</span>
+            <h2 class="font-kanit text-3xl md:text-4xl font-bold text-brand-900 mt-1.5">สินเชื่อแนะนำ 3 ตัว อนุมัติไวที่สุด</h2>
+            <p class="text-brand-800 mt-3 text-[1.05rem]">คัดมาให้แล้วตามความต้องการ ดูชัดๆ ว่าได้เท่าไหร่ ไวแค่ไหน ดอกเบี้ยเท่าไหร่</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-107.5 md:max-w-none mx-auto">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-[20px] p-7 border border-brand-100 shadow-soft relative transition-all duration-200 hover:-translate-y-1.5 hover:shadow-pop flex flex-col items-center text-center">
+                <div class="flex justify-center items-center mb-5 h-10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Mastercard_logo.svg/1200px-Mastercard_logo.svg.png" alt="โลโก้ผู้ให้บริการ 1" class="max-h-full max-w-35 object-contain"> 
+                </div>
+                <h3 class="font-kanit text-[1.3rem] text-brand-900 font-bold">สินเชื่อเร่งด่วน KBank</h3>
+                <p class="text-[0.93rem] text-brand-700 mt-1 mb-5 min-h-[2.6em]">เน้นความเร็วเป็นหลัก เหมาะเวลาต้องใช้เงินภายในวันนี้</p>
+                <div class="w-full flex flex-col gap-3 mb-6 text-left">
+                    <div class="flex items-center text-[0.95rem]"><svg class="w-5 h-5 text-brand-500 mr-2.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span class="text-brand-700">รู้ผล</span><span class="font-kanit font-bold text-brand-900 ml-auto">ใน 15 นาที</span></div>
+                    <div class="flex items-center text-[0.95rem]"><svg class="w-5 h-5 text-brand-500 mr-2.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg><span class="text-brand-700">วงเงิน</span><span class="font-kanit font-bold text-brand-900 ml-auto">5K–30K</span></div>
+                    <div class="flex items-center text-[0.95rem]"><svg class="w-5 h-5 text-brand-500 mr-2.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg><span class="text-brand-700">ดอกเบี้ย*</span><span class="font-kanit font-bold text-brand-900 ml-auto">เริ่ม 1.25%</span></div>
+                </div>
+                <a href="#" class="w-full justify-center font-kanit font-bold inline-flex items-center gap-2 rounded-full transition-all duration-180 bg-brand-500 text-white p-3 text-[1.02rem] hover:bg-brand-600 hover:-translate-y-0.5 mt-auto" onclick="return go(this)">สมัครเลย</a>
+            </div>
+
+            <!-- Card 2 Featured -->
+            <div class="bg-white rounded-[20px] p-7 border-2 border-brand-500 shadow-pop relative transition-all duration-200 hover:-translate-y-1.5 flex flex-col items-center text-center">
+                <span class="absolute -top-3.5 left-1/2 transform -translate-x-1/2 bg-gradient-to-r from-limeaccent to-limeaccent-dark text-brand-900 font-kanit font-bold text-[0.8rem] py-1 px-4 rounded-full whitespace-nowrap shadow-[0_6px_16px_rgba(143,214,31,0.5)]">★ ยอดนิยม คุ้มที่สุด</span>
+                <div class="flex justify-center items-center mb-5 h-10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/1200px-Visa_Inc._logo.svg.png" alt="โลโก้ผู้ให้บริการ 2" class="max-h-full max-w-35 object-contain">
+                </div>
+                <h3 class="font-kanit text-[1.3rem] text-brand-900 font-bold">สินเชื่อสมดุล SCB</h3>
+                <p class="text-[0.93rem] text-brand-700 mt-1 mb-5 min-h-[2.6em]">เร็วก็ได้ คุ้มก็ดี ทางเลือกที่คนเลือกมากที่สุด</p>
+                <div class="w-full flex flex-col gap-3 mb-6 text-left">
+                    <div class="flex items-center text-[0.95rem]"><svg class="w-5 h-5 text-brand-500 mr-2.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span class="text-brand-700">รู้ผล</span><span class="font-kanit font-bold text-brand-900 ml-auto">ใน 30 นาที</span></div>
+                    <div class="flex items-center text-[0.95rem]"><svg class="w-5 h-5 text-brand-500 mr-2.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg><span class="text-brand-700">วงเงิน</span><span class="font-kanit font-bold text-brand-900 ml-auto">10K–50K</span></div>
+                    <div class="flex items-center text-[0.95rem]"><svg class="w-5 h-5 text-brand-500 mr-2.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg><span class="text-brand-700">ดอกเบี้ย*</span><span class="font-kanit font-bold text-brand-900 ml-auto">เริ่ม 0.99%</span></div>
+                </div>
+                <a href="#" class="w-full justify-center font-kanit font-bold inline-flex items-center gap-2 rounded-full transition-all duration-180 bg-gradient-to-br from-limeaccent to-limeaccent-dark text-brand-900 p-3 text-[1.02rem] hover:-translate-y-0.5 mt-auto" onclick="return go(this)">สมัครเลย</a>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="bg-white rounded-[20px] p-7 border border-brand-100 shadow-soft relative transition-all duration-200 hover:-translate-y-1.5 hover:shadow-pop flex flex-col items-center text-center">
+                <div class="flex justify-center items-center mb-5 h-10">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/1200px-American_Express_logo_%282018%29.svg.png" alt="โลโก้ผู้ให้บริการ 3" class="max-h-full max-w-35 object-contain">
+                </div>
+                <h3 class="font-kanit text-[1.3rem] text-brand-900 font-bold">สินเชื่อวงเงินสูง KTC</h3>
+                <p class="text-[0.93rem] text-brand-700 mt-1 mb-5 min-h-[2.6em]">ต้องการเงินก้อนใหญ่ ผ่อนสบายเป็นงวด ยาวๆ ได้</p>
+                <div class="w-full flex flex-col gap-3 mb-6 text-left">
+                    <div class="flex items-center text-[0.95rem]"><svg class="w-5 h-5 text-brand-500 mr-2.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><span class="text-brand-700">รู้ผล</span><span class="font-kanit font-bold text-brand-900 ml-auto">ใน 1 ชม.</span></div>
+                    <div class="flex items-center text-[0.95rem]"><svg class="w-5 h-5 text-brand-500 mr-2.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18"/></svg><span class="text-brand-700">วงเงิน</span><span class="font-kanit font-bold text-brand-900 ml-auto">30K–100K</span></div>
+                    <div class="flex items-center text-[0.95rem]"><svg class="w-5 h-5 text-brand-500 mr-2.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg><span class="text-brand-700">ดอกเบี้ย*</span><span class="font-kanit font-bold text-brand-900 ml-auto">เริ่ม 0.89%</span></div>
+                </div>
+                <a href="#" class="w-full justify-center font-kanit font-bold inline-flex items-center gap-2 rounded-full transition-all duration-180 bg-brand-500 text-white p-3 text-[1.02rem] hover:bg-brand-600 hover:-translate-y-0.5 mt-auto" onclick="return go(this)">สมัครเลย</a>
+            </div>
+        </div>
+        <p class="text-center text-[0.85rem] text-brand-600 mt-6">*อัตราดอกเบี้ยและเงื่อนไขเป็นตัวอย่างเพื่อการออกแบบ อัตราจริงเป็นไปตามที่ผู้ให้บริการสินเชื่อกำหนด</p>
+    </div>
+</section>
+
+<!-- TRUST -->
+<section class="py-12">
+    <div class="max-w-280 w-[92vw] mx-auto">
+        <div class="bg-gradient-to-br from-brand-700 to-brand-900 text-white rounded-[32px] py-12 px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="font-kanit font-extrabold text-[2.6rem] text-limeaccent leading-none">180,000+</div>
+                    <div class="text-brand-100 mt-1.5 text-[0.98rem]">คนเปรียบเทียบแล้ว</div>
+                </div>
+                <div>
+                    <div class="font-kanit font-extrabold text-[2.6rem] text-limeaccent leading-none">15 นาที</div>
+                    <div class="text-brand-100 mt-1.5 text-[0.98rem]">รู้ผลเร็วที่สุด</div>
+                </div>
+                <div>
+                    <div class="font-kanit font-extrabold text-[2.6rem] text-limeaccent leading-none">20+</div>
+                    <div class="text-brand-100 mt-1.5 text-[0.98rem]">ผู้ให้บริการที่ร่วม</div>
+                </div>
+                <div>
+                    <div class="font-kanit font-extrabold text-[2.6rem] text-limeaccent leading-none">100%</div>
+                    <div class="text-brand-100 mt-1.5 text-[0.98rem]">เข้ารหัสปลอดภัย</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- STEPS -->
+<section id="how" class="py-18 md:py-20">
+    <div class="max-w-280 w-[92vw] mx-auto">
+        <div class="text-center max-w-155 mx-auto mb-11">
+            <span class="font-kanit font-semibold text-brand-500 tracking-wider text-[0.85rem]">ง่ายแค่ 3 ขั้น</span>
+            <h2 class="font-kanit text-3xl md:text-4xl font-bold text-brand-900 mt-1.5">สมัครยังไง? ไม่ยุ่งยากอย่างที่คิด</h2>
+            <p class="text-brand-800 mt-3 text-[1.05rem]">ไม่ต้องใช้เอกสารเยอะ ไม่ต้องมีคนค้ำ ทำได้เองจากมือถือ</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-107.5 md:max-w-none mx-auto [counter-reset:step-counter]">
+            <div class="bg-white rounded-[20px] p-8 border border-brand-100 text-center relative">
+                <div class="font-kanit font-extrabold text-2xl w-15 h-15 rounded-full flex items-center justify-center mx-auto bg-brand-50 text-brand-500 border-2 border-dashed border-brand-300 before:[counter-increment:step-counter] before:content-[counter(step-counter)] mb-4"></div>
+                <h3 class="font-kanit text-[1.2rem] text-brand-900 font-bold mb-2">เลือกสินเชื่อ</h3>
+                <p class="text-brand-700 text-[0.95rem]">กดเลือกตัวที่ตรงกับวงเงินและความเร็วที่คุณต้องการ</p>
+            </div>
+            <div class="bg-white rounded-[20px] p-8 border border-brand-100 text-center relative">
+                <div class="font-kanit font-extrabold text-2xl w-15 h-15 rounded-full flex items-center justify-center mx-auto bg-brand-50 text-brand-500 border-2 border-dashed border-brand-300 before:[counter-increment:step-counter] before:content-[counter(step-counter)] mb-4"></div>
+                <h3 class="font-kanit text-[1.2rem] text-brand-900 font-bold mb-2">กรอกข้อมูลสั้นๆ</h3>
+                <p class="text-brand-700 text-[0.95rem]">ใช้แค่บัตรประชาชนและเบอร์โทร กรอกไม่ถึง 5 นาที</p>
+            </div>
+            <div class="bg-white rounded-[20px] p-8 border border-brand-100 text-center relative">
+                <div class="font-kanit font-extrabold text-2xl w-15 h-15 rounded-full flex items-center justify-center mx-auto bg-brand-50 text-brand-500 border-2 border-dashed border-brand-300 before:[counter-increment:step-counter] before:content-[counter(step-counter)] mb-4"></div>
+                <h3 class="font-kanit text-[1.2rem] text-brand-900 font-bold mb-2">รอรับเงิน</h3>
+                <p class="text-brand-700 text-[0.95rem]">รู้ผลไว เงินเข้าบัญชีตามเงื่อนไขของผู้ให้บริการ</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-18 md:py-20 bg-brand-50">
+    <div class="max-w-280 w-[92vw] mx-auto">
+        <div class="text-center max-w-155 mx-auto mb-11">
+            <span class="font-kanit font-semibold text-brand-500 tracking-wider text-[0.85rem]">คลายข้อสงสัย</span>
+            <h2 class="font-kanit text-3xl md:text-4xl font-bold text-brand-900 mt-1.5">คำถามที่คนถามบ่อย</h2>
+        </div>
+        
+        <div class="max-w-190 mx-auto flex flex-col gap-4">
+            <details open class="group bg-white border border-brand-100 rounded-2xl p-1.5 shadow-soft open:border-brand-400 transition-colors">
+                <summary class="font-kanit font-semibold text-[1.08rem] text-brand-900 p-4 cursor-pointer list-none flex justify-between items-center gap-4">
+                    เว็บนี้คิดค่าบริการไหม? 
+                    <span class="w-6.5 h-6.5 rounded-full bg-brand-50 flex items-center justify-center text-brand-500 font-bold transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p class="px-4 pb-4.5 text-brand-700 text-[0.97rem]">การเปรียบเทียบและดูข้อมูลสินเชื่อบนเว็บนี้ฟรี ไม่มีค่าใช้จ่าย เราเป็นตัวกลางที่ช่วยคุณเปรียบเทียบและส่งต่อไปยังผู้ให้บริการสินเชื่อโดยตรง</p>
+            </details>
+            <details class="group bg-white border border-brand-100 rounded-2xl p-1.5 shadow-soft open:border-brand-400 transition-colors">
+                <summary class="font-kanit font-semibold text-[1.08rem] text-brand-900 p-4 cursor-pointer list-none flex justify-between items-center gap-4">
+                    ต้องใช้เอกสารอะไรบ้าง? 
+                    <span class="w-6.5 h-6.5 rounded-full bg-brand-50 flex items-center justify-center text-brand-500 font-bold transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p class="px-4 pb-4.5 text-brand-700 text-[0.97rem]">ส่วนใหญ่ใช้เพียงบัตรประชาชนและเบอร์โทรศัพท์ บางผลิตภัณฑ์อาจขอข้อมูลรายได้เพิ่มเติม ขึ้นอยู่กับเงื่อนไขของผู้ให้บริการแต่ละราย</p>
+            </details>
+            <details class="group bg-white border border-brand-100 rounded-2xl p-1.5 shadow-soft open:border-brand-400 transition-colors">
+                <summary class="font-kanit font-semibold text-[1.08rem] text-brand-900 p-4 cursor-pointer list-none flex justify-between items-center gap-4">
+                    อนุมัติไวจริงไหม จะได้เงินเมื่อไหร่? 
+                    <span class="w-6.5 h-6.5 rounded-full bg-brand-50 flex items-center justify-center text-brand-500 font-bold transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p class="px-4 pb-4.5 text-brand-700 text-[0.97rem]">ผลิตภัณฑ์ที่เราคัดมาเน้นการอนุมัติเร็ว บางตัวรู้ผลภายใน 15 นาที ระยะเวลาการรับเงินจริงขึ้นอยู่กับขั้นตอนของผู้ให้บริการและธนาคารปลายทาง</p>
+            </details>
+            <details class="group bg-white border border-brand-100 rounded-2xl p-1.5 shadow-soft open:border-brand-400 transition-colors">
+                <summary class="font-kanit font-semibold text-[1.08rem] text-brand-900 p-4 cursor-pointer list-none flex justify-between items-center gap-4">
+                    ข้อมูลของฉันปลอดภัยไหม? 
+                    <span class="w-6.5 h-6.5 rounded-full bg-brand-50 flex items-center justify-center text-brand-500 font-bold transition-transform group-open:rotate-45">+</span>
+                </summary>
+                <p class="px-4 pb-4.5 text-brand-700 text-[0.97rem]">เราให้ความสำคัญกับความปลอดภัยของข้อมูล มีการเข้ารหัสในการส่งข้อมูล และส่งต่อไปยังผู้ให้บริการที่ได้รับอนุญาตเท่านั้น</p>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="text-center py-18 md:py-20 bg-[radial-gradient(700px_400px_at_50_0%,#d6f5e6,transparent_70%)] bg-no-repeat bg-top">
+    <div class="max-w-280 w-[92vw] mx-auto">
+        <h2 class="font-kanit text-3xl md:text-5xl font-extrabold text-brand-900 max-w-[18ch] mx-auto mb-4">พร้อมหาเงินด่วนที่ใช่แล้วหรือยัง?</h2>
+        <p class="text-brand-800 text-[1.1rem] mb-8">ใช้เวลาไม่ถึงนาที เปรียบเทียบสินเชื่อที่อนุมัติไวที่สุดได้เลย</p>
+        <a href="#options" class="font-kanit font-bold inline-flex items-center gap-2 rounded-full transition-all duration-180 bg-gradient-to-br from-limeaccent to-limeaccent-dark text-brand-900 text-[1.15rem] py-4 px-9 shadow-[0_8px_24px_rgba(143,214,31,0.45)] hover:-translate-y-1 hover:shadow-[0_14px_34px_rgba(143,214,31,0.6)]">เริ่มเปรียบเทียบเลย →</a>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-brand-900 text-brand-100 py-14 mt-4">
+    <div class="max-w-280 w-[92vw] mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-[1.4fr_1fr_1fr] gap-10 mb-10">
+            <div>
+                <div class="font-kanit font-extrabold text-2xl text-white mb-3">฿ เงินทันใจ</div>
+                <p class="text-[0.92rem] opacity-80 max-w-[34ch]">แพลตฟอร์มเปรียบเทียบสินเชื่อ ช่วยคุณหาผลิตภัณฑ์ที่อนุมัติไวและเหมาะกับความต้องการ</p>
+            </div>
+            <div>
+                <h4 class="font-kanit text-white font-semibold text-[1.05rem] mb-4">เมนู</h4>
+                <a href="#options" class="block mb-2.5 text-[0.92rem] opacity-85 hover:opacity-1 hover:text-limeaccent transition-all">สินเชื่อแนะนำ</a>
+                <a href="#how" class="block mb-2.5 text-[0.92rem] opacity-85 hover:opacity-1 hover:text-limeaccent transition-all">วิธีสมัคร</a>
+                <a href="#faq" class="block mb-2.5 text-[0.92rem] opacity-85 hover:opacity-1 hover:text-limeaccent transition-all">คำถามที่พบบ่อย</a>
+            </div>
+            <div>
+                <h4 class="font-kanit text-white font-semibold text-[1.05rem] mb-4">ข้อมูล</h4>
+                <a href="#" class="block mb-2.5 text-[0.92rem] opacity-85 hover:opacity-1 hover:text-limeaccent transition-all">เกี่ยวกับเรา</a>
+                <a href="#" class="block mb-2.5 text-[0.92rem] opacity-85 hover:opacity-1 hover:text-limeaccent transition-all">นโยบายความเป็นส่วนตัว</a>
+                <a href="#" class="block mb-2.5 text-[0.92rem] opacity-85 hover:opacity-1 hover:text-limeaccent transition-all">ติดต่อเรา</a>
+            </div>
+        </div>
+        
+        <div class="border-t border-white/12 pt-6 text-[0.82rem] text-white/60 leading-relaxed">
+            <strong>คำเตือน:</strong> กู้เท่าที่จำเป็นและชำระคืนไหว · การมีหนี้สินมากเกินไปอาจส่งผลกระทบต่อสถานะทางการเงินของท่าน · โปรดศึกษาเงื่อนไข อัตราดอกเบี้ย และค่าธรรมเนียมจากผู้ให้บริการก่อนตัดสินใจ<br><br>
+            เว็บไซต์นี้เป็นสื่อกลางแนะนำและเปรียบเทียบผลิตภัณฑ์สินเชื่อ (Affiliate) มิได้เป็นผู้ปล่อยสินเชื่อโดยตรง · ข้อมูลผลิตภัณฑ์ ตัวเลขวงเงิน และอัตราดอกเบี้ยที่แสดงเป็นตัวอย่างเพื่อการออกแบบ · เงื่อนไขจริงเป็นไปตามที่ผู้ให้บริการที่ได้รับอนุญาตกำหนด · © 2026 เงินทันใจ
+        </div>
+    </div>
+</footer>
+
+<script>
+    function upd(){
+        const v = +document.getElementById('rng').value;
+        document.getElementById('amt').innerHTML = v.toLocaleString() + ' <small class="text-[1rem] text-brand-600 font-medium">บาท</small>';
+        const pay = Math.round((v * 1.11) / 12 / 10) * 10;
+        document.getElementById('pay').textContent = '฿' + pay.toLocaleString() + ' / เดือน*';
+        const pct = ((v - 5000) / 45000) * 100;
+        document.getElementById('rng').style.background = `linear-gradient(90deg, #19a974 ${pct}%, #d6f5e6 ${pct}%)`;
+    }
+    function go(el){ 
+        alert('นี่คือปุ่มตัวอย่าง — ในเว็บจริง ปุ่มนี้จะลิงก์ไปยังหน้าสมัครของผู้ให้บริการ (Affiliate link)'); 
+        return false; 
+    }
+    upd();
+</script>
+</body>
+</html>
