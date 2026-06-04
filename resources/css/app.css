@@ -9,6 +9,26 @@
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
         'Segoe UI Symbol', 'Noto Color Emoji';
+         --font-kanit: 'Kanit', sans-serif;
+            --font-thai: '"IBM Plex Sans Thai"', sans-serif;
+
+            --color-brand-50: #eefbf4;
+            --color-brand-100: #d6f5e6;
+            --color-brand-300: #7ee0b5;
+            --color-brand-400: #3dc78f;
+            --color-brand-500: #19a974;
+            --color-brand-600: #13855f;
+            --color-brand-700: #0f6b4d;
+            --color-brand-800: #0a4d38;
+            --color-brand-900: #053527;
+            --color-brand-ink: #06281d;
+            --color-brand-paper: #f4faf6;
+
+            --color-limeaccent: #b6f24a;
+            --color-limeaccent-dark: #8fd61f;
+
+            --shadow-soft: 0 10px 40px rgba(6, 40, 29, 0.10);
+            --shadow-pop: 0 18px 50px rgba(15, 107, 77, 0.28);
 }
 
 @custom-variant dark (&:where(.dark, .dark *));
